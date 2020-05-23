@@ -1,0 +1,76 @@
+<!-- Actual index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fame Tech | Best Out There</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+        <div class="nav-toolbar">
+            <!-- Currently i'm not adding logo but that can be done with <i></i> tag or SVG with CSS depending upon logo type, easily based upon the company's real logo -->
+            <span class="logo">LOGO</span>
+            <span><i id="hamburger" class="fas fa-bars"></i></span>
+        </div>  
+        <ul class="nav-item-list">
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./Speaker/speaker.html">Our Speakers</a></li>
+            <li class="nav-item"><a href="./About/about.html">About</a></li>
+            <li class="nav-item"><a href="./Transaction/transaction.html">Buy Tickets</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div id="above-content">
+            <p>we provide the best out there to you.</p>
+            <p>join us today !!</p>
+            <button class="btn-special"><a href="./Transaction/transaction.html">Buy Tickets</a></button>
+        </div>
+    </div>
+    <div class="below-content">
+        <h2 class="heading">What people say about us &rarr;</h2>
+        <div class="user-reviews">
+            <div class="card">
+                <p>I really enjoyed the session here in Hyderabad, at the end i was fully motivated and cheered up hopefully i will get something out of it. Thanks to tech summit 2k19</p>
+                <div class="user-info">
+                    <img src="img/user-1.jpeg" alt="user 1 photo" class="user-photo"><br>
+                    <span>Sanyam<br>20 feb, 2019</span>
+                </div>
+            </div>
+            <div class="card">
+                <p>This was the best summit i have ever visited till now. The whole session was very interactive
+                and i learnt a lot. Looking forward to attend another one if they ever come to my city again.</p>
+                <div class="user-info">
+                    <img src="img/user-2.jpeg" alt="user 1 photo" class="user-photo"><br>
+                    <span>Gaurav<br>29 july,2019</span>
+                </div>
+            </div>
+            <div class="card">
+                <p>You guys really stay true to what you say "we provide the best out there to you". You are
+                infact the best of the best.</p>
+                <div class="user-info">
+                    <img src="img/user-3.jpeg" alt="user 1 photo" class="user-photo"><br>
+                    <span>Aniket<br>10 march, 2020</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Follow us on : </div>
+        <div class="icon-list">
+            <!-- These logos are just for display purpose only for now but for a real company they
+                can be made links to their page with anchor tag <a>logo</a> -->
+            <i class="fab fa-whatsapp" style="color:green;"></i>
+            <i class="fab fa-facebook" style="color:#194a9a;"></i>
+            <i class="fab fa-instagram" style="color:#d2467c;"></i>
+            <i class="fab fa-github" style="color: black"></i>
+        </div>
+        <div>&copy; 2020 by Fame Tech. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

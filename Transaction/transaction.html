@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fame Tech | Buy Tickets</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="stylesheet" type="text/css" href="transaction.css">
+</head>
+<body>
+	<nav class="navbar">
+        <div class="nav-toolbar">
+            <!-- Currently i'm not adding logo but that can be done with <i></i> tag or SVG with CSS depending upon logo type, easily based upon the company's real logo -->
+            <span class="logo">LOGO</span>
+            <span><i id="hamburger" class="fas fa-bars"></i></span>
+        </div>  
+        <ul class="nav-item-list">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="../Speaker/speaker.html">Our Speakers</a></li>
+            <li class="nav-item"><a href="../About/about.html">About</a></li>
+            <li class="nav-item"><a href="transaction.html">Buy Tickets</a></li>
+        </ul>
+    </nav>
+    <!-- The three responsive tickets/cards -->
+    <div class="options">
+    	<div class="card-price">
+			<h2 class="heading other-heading">Classic</h2 class="heading">
+			<ul>
+				<li>Access to 100+ talks</li>
+				<li>Access to workshops</li>
+				<li>Access to Mobile & web app</li>
+				<li>Email & chat support</li>
+			</ul>
+            <a class="toForm" href="transaction.html#toForm">Book Now</a>
+    	</div>
+        <div class="card-price">
+            <h2 class="heading other-heading">Executive</h2 class="heading">
+            <ul>
+                <li>Access to 200+ talks</li>
+                <li>Access to workshops</li>
+                <li>Access to Mobile & web app</li>
+                <li>Email & chat support</li>
+                <li>Access to investor lounge</li>
+                <li>Speakers Reception invite</li>
+            </ul>
+            <a class="toForm" href="transaction.html#toForm">Book Now</a>
+        </div>
+        <div class="card-price">
+            <h2 class="heading other-heading">Premium</h2 class="heading">
+            <ul>
+                <li>Access to 500+ talks</li>
+                <li>Access to workshops</li>
+                <li>Access to Mobile & web app</li>
+                <li>Email & chat support</li>
+                <li>Access to investor lounge</li>
+                <li>Speakers Reception invite</li>
+                <li>Access to Atendee database</li>
+                <li>Access to Premium lounge</li>
+            </ul>
+            <!-- Clicking this btn takes you down to the form to be filled with the id="toFrom" -->
+            <a class="toForm" href="transaction.html#toForm">Book Now</a>
+        </div>
+    </div>
+	<!-- Method for now doesn't matter cause i'm not implementing a server for now and
+		this is just a basic project but this can be changed in future -->
+    <h2 class="heading" style="margin-top: 4rem;">Fill the below form to join us !!!</h2>
+    <div id="form-details">
+        <a id="toForm">random</a>
+        <form action="../index.html" method="GET">
+            <div class="form-element">
+                <label for="username">UserName : </label>
+                <input type="text" name="username" required id="username" placeholder="eg. Gatsby">
+            </div>
+            <div class="form-element">
+                <label for="email">Email : </label>
+                <input type="email" name="email" required id="email" placeholder="eg. Gatsby@gmail.com">
+            </div>
+            <div class="form-element">
+                <label for="mop">Mode Of Payment : </label>
+                <select required id="mop" name="MOP">
+                    <option value="Paytm">Paytm</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Debit Card">Debit Card</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <input id="submit-button" type="submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div>Follow us on : </div>
+        <div class="icon-list">
+            <!-- These logos are just for display purpose only for now but for a real company they
+                can be made links to their page with anchor tag <a>logo</a> -->
+            <i class="fab fa-whatsapp" style="color:green;"></i>
+            <i class="fab fa-facebook" style="color:#194a9a;"></i>
+            <i class="fab fa-instagram" style="color:#d2467c;"></i>
+            <i class="fab fa-github" style="color: black"></i>
+        </div>
+        <div>&copy; 2020 by Fame Tech. All rights reserved.</div>
+    </footer>
+	<script type="text/javascript" src="../main.js"></script>
+    <!-- Since this has only one functionality that could require JS i'm making use
+        of script tags here to avoid unecessary creation of file and to show i can
+        work in this way as well -->
+    <script type="text/javascript">
+        // On click of submit alert is displyed only if feilds entered are not empty
+        document.querySelector("#submit-button").addEventListener("click",()=>{
+            if((document.querySelector("#username").textContent!=="")&&(document.querySelector.textContent("#email")!=="")){
+                alert("Your Ticket has been sent to your email account. :) ");
+            }
+        })
+    </script>
+</body>
+</html>
